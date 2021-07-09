@@ -8,9 +8,59 @@
     <form>  
     
     </form>  
-    Current Time:<span id="txt"></span>
+    Current Time:<span id="txt"></span><br/>
+    Random number is: <span id="demo"></span>
     <div>
+       <button type="button" onclick="
+       document.getElementById('txt').style.color='red'"> 
+           Change Color of timer
+       </button>
+       
+       <button>Turn on the light</button><br/>
        
     </div>
+    <br/>
+    <input type="button" value="delete records" onclick="msg1()"/>
+    <input type="button" value="Click" onclick="msg2()"/>
+    <input type="button" value="link" onclick="msg3()"/>
+    <form name="form1">
+        Enter Name:<input type="text" name="name"/>
+        <input type="button" onclick="printvalue()" value="print name"/>
+        <form name="myForm">
+            <input type='button' value='comment' onclick="showcommentform()">
+        </form>
+    </form>
+    <form name="myForm">  
+        <input type="password" value="" name="userPass" onkeyup="validate()">  
+        Strength:<span id="mylocation">no strength</span>  
+        </form> 
+
+        //form validation
+
+        <form name="myForm2" method="post" action="abc.jsp" onsubmit="return validateform()">
+            Name:<input type="text" name="name"><br/>
+            Password:<input type="password" name="password"><br/>
+            <input type="submit" value="register">
+        </form>
+
+        //js retype password validation
+
+        <form name="myForm3" action="http://www.javatpoint.com/javascriptpages/valid.jsp"  onsubmit="return matchpass()">
+            <input type="password" name="password"/><br/>
+            Re-enter password:<input type="password" name="password2"/><br/>
+            <input type="submit">
+        </form>
+
+        //number validation
+
+        <form name="myForm4" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return numval()">
+            Number:<input type="text" name="num"><span id="numloc"></span>
+            <input type="submit" value="submit">
+        </form>
+
+        //evemts
+        
+        <p onmouseover="mouseroverevent()">Keep Cusror on me</p>
+
     </body>  
 </html>  
